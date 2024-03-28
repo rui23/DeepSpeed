@@ -4,7 +4,7 @@ from dataclasses import dataclass, field
 import torch
 import transformers
 
-@dataclass
+@dataclass # 自定义模型参数部分
 class ModelArguments:
     model_name_or_path: Optional[str] = field(
         default="EleutherAI/pythia-12b"

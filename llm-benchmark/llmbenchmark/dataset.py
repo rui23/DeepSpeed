@@ -151,7 +151,7 @@ def make_data_module(tokenizer: transformers.PreTrainedTokenizer, args) -> Dict:
     def load_data(dataset_name, data_path=None):
         if data_path is None:
             if dataset_name == 'alpaca':
-                return load_dataset("tatsu-lab/alpaca")
+                return load_dataset("tatsu-lab/alpaca") # huggingface里的load_dataset很智能，只要传递路径、文件的形式，就能自动解析为一个格式
             elif dataset_name == 'alpaca-dummy':
                 return load_dataset("Lohse/alpaca-dummy")
             elif dataset_name == 'alpaca-clean':
