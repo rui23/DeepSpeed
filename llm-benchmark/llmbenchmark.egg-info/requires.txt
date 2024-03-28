@@ -1,0 +1,16 @@
+bitsandbytes
+datasets
+deepspeed
+evaluate
+InquirerPy
+numpy
+nvidia_ml_py
+packaging
+peft
+pynvml
+torch==2.0.1
+tqdm
+transformers
+pandas
+SentencePiece
+protobuf
